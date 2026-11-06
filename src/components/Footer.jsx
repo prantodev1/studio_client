@@ -24,7 +24,8 @@ const socialLinks = [
   { name: "Facebook", href: "https://www.facebook.com/share/1PrxzAJ46B/", icon: "f" },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/prantodev/", icon: "in" },
   {name: "GitHub", href: "https://github.com/prantodev1", icon: "g" },
-  {name: "leetcode", href: "https://leetcode.com/prantodev1/", icon: "l" }
+  {name: "leetcode", href: "https://leetcode.com/u/X1KFHVCxDc/", icon: "l" },
+  {name: "discord", href: "https://discord.com/users/1520281600728895660", icon: "d" }
   
 ];
 
