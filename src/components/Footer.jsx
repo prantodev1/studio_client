@@ -23,7 +23,7 @@ const accountLinks = [
 const socialLinks = [
   { name: "Facebook", href: "https://www.facebook.com/share/1PrxzAJ46B/", icon: "f" },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/prantodev/", icon: "in" },
-  {name: "GitHub", href: "https://github.com/prantodev", icon: "g" }
+  {name: "GitHub", href: "https://github.com/prantodev1", icon: "g" }
   
 ];
 
