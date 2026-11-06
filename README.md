@@ -204,10 +204,6 @@ The authentication system supports:
 
 The StudioSpace Client application is deployed on **Vercel**.
 
-### Production Deployment
-
-```bash
-vercel --prod
 ```
 
 ### Deployment Configuration
