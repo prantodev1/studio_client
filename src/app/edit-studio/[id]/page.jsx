@@ -5,10 +5,8 @@ import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { Suspense } from "react";
 import { authClient } from "@/lib/auth-client";
+import { API_URL } from "@/lib/api";
 import { toast } from "react-toastify";
-
-const API_URL =
-    process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
 
 function EditStudioForm() {
     const params = useParams();

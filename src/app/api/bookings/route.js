@@ -1,5 +1,6 @@
 
 import { auth } from "@/lib/auth";
+import { API_URL } from "@/lib/api";
 import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 
@@ -41,12 +42,6 @@ export async function POST(request) {
         const bookingData = await request.json();
 
         // 4. Forward request to Express backend
-        const API_URL = process.env.NEXT_PUBLIC_API_URL;
-
-        if (!API_URL) {
-            throw new Error("NEXT_PUBLIC_API_URL is not configured");
-        }
-
         const backendResponse = await fetch(
             `${API_URL}/bookings`,
             {

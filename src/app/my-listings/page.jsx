@@ -3,11 +3,9 @@
 
 import { useEffect, useState } from "react";
 import { authClient } from "@/lib/auth-client";
+import { API_URL } from "@/lib/api";
 import Link from "next/link";
 import { toast } from "react-toastify";
-
-const API_URL =
-    process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
 
 export default function MyListingsPage() {
     const { data: session, isPending } = authClient.useSession();

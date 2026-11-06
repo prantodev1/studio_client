@@ -4,6 +4,7 @@
 import { useEffect, useState, Suspense } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
+import { API_URL } from "@/lib/api";
 
 function StudioDetailsContent() {
   const { id } = useParams();
@@ -18,9 +19,7 @@ function StudioDetailsContent() {
   useEffect(() => {
     const fetchStudio = async () => {
       try {
-        const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/studios/${id}`
-        );
+        const response = await fetch(`${API_URL}/studios/${id}`);
 
         const result = await response.json();
 

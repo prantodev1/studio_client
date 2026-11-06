@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import { authClient } from "@/lib/auth-client";
+import { API_URL } from "@/lib/api";
 
 function BookingForm() {
   const searchParams = useSearchParams();
@@ -36,7 +37,7 @@ function BookingForm() {
 
     let cancelled = false;
 
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/studios/${studioId}`)
+    fetch(`${API_URL}/studios/${studioId}`)
       .then((response) => response.json())
       .then((result) => {
         if (!cancelled && result?.data) {

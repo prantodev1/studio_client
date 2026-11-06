@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
+import { API_URL } from "@/lib/api";
 
 export default function StudiosPage() {
   const [studios, setStudios] = useState([]);
@@ -49,9 +50,7 @@ export default function StudiosPage() {
   useEffect(() => {
     const fetchStudios = async () => {
       try {
-        const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api"}/studios`
-        );
+        const response = await fetch(`${API_URL}/studios`);
 
         const result = await response.json();
 

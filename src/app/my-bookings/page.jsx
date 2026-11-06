@@ -4,10 +4,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { authClient } from "@/lib/auth-client";
+import { API_URL } from "@/lib/api";
 import { toast } from "react-toastify";
-
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
 
 const statusStyles = {
   pending:

@@ -2,9 +2,7 @@
 import { toast } from "react-toastify";
 import { useEffect, useState } from "react";
 import { authClient } from "@/lib/auth-client";
-
-const API_URL =
-    process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
+import { API_URL } from "@/lib/api";
 
 export default function DashboardPage() {
     const [dashboard, setDashboard] = useState(null);

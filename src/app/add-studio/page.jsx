@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { authClient } from "@/lib/auth-client";
+import { API_URL } from "@/lib/api";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 
@@ -56,7 +57,7 @@ export default function AddStudioPage() {
       }
 
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/studios`,
+        `${API_URL}/studios`,
         {
           method: "POST",
           headers: {

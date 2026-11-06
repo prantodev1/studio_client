@@ -2,6 +2,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { API_URL } from "@/lib/api";
 
 export default function FeaturedStudios() {
   const [studios, setStudios] = useState([]);
@@ -12,7 +13,7 @@ export default function FeaturedStudios() {
     const fetchFeaturedStudios = async () => {
       try {
        const response = await fetch(
-  `${process.env.NEXT_PUBLIC_API_URL}/studios/featured`
+  `${API_URL}/studios/featured`
 );
 
         if (!response.ok) {
