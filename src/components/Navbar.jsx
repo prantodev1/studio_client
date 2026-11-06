@@ -85,7 +85,7 @@ export default function Navbar() {
             </h1>
 
             <p className="hidden text-[10px] font-medium tracking-[2px] text-slate-500 dark:text-slate-400 sm:block">
-              YOUR SPACE. YOUR VISION. YOUR STORY.
+              YOUR SPACE.YOUR VISION.YOUR STORY.
             </p>
           </div>
         </Link>
